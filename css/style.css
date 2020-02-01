@@ -116,6 +116,8 @@ h1 {
     overflow-y: auto;
     overflow-x: hidden;
     
+    height: 100%;
+    
     padding: 1rem;
 
     /* This is to put a grid... in another grid */
