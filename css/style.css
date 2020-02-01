@@ -6,7 +6,12 @@ font-family: 'Hind Guntur', sans-serif;
 */
 
 
+html {
+    height: 100vh;
+}
+
 body {
+
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -117,7 +122,7 @@ h1 {
     overflow-x: hidden;
     
     height: 100%;
-    
+
     padding: 1rem;
 
     /* This is to put a grid... in another grid */
