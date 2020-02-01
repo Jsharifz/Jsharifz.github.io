@@ -98,11 +98,11 @@ h1 {
     overflow-y: auto;
     overflow-x: hidden;
     
+    width: fit-content;
     padding: 2rem;
 
     /* This is to put a grid... in another grid */
-    display: grid;
-    grid-template-rows: min-content min-content min-content;
+    display: block;
 
     font-family: 'Hind Guntur', sans-serif;
     color: #3A5C57;
