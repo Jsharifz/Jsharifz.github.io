@@ -1,0 +1,145 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+GENERAL 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+/*Modified for Bonus*/
+.container {
+    max-width: 70vw;
+    display: flex;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+NAV 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+nav {
+    border-bottom: 1px solid #ededed;
+    border-radius: 1rem 1rem 0 0;
+}
+
+/*Modified for Bonus*/
+.navbar > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .container ul {
+    display: flex;
+}
+
+/*Modified for Bonus*/
+nav .container ul li {
+    margin: 0 25px;
+    font-size: 12px;
+}
+
+.logo {
+    background: url('./img/logo.svg');
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 30px;
+    width: 30px;
+}
+
+/*Modified for Bonus*/
+@media (max-width: 1100px) {
+    nav .container {
+        padding: 0 30px;
+    }
+
+    nav .container ul {
+        display: none;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+CARDS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Your styles go here */
+
+.card-row {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    width: 75vw;
+    grid-gap: 1rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1.5rem 1fr max-content;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    width: auto;
+    height: 300px;
+
+    padding: 1rem 1rem 1rem 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(219, 219, 219);
+}
+
+.topic {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 1.5rem;
+    width: 200px;
+}
+
+.price {
+    background-color: white;
+    border: 2px solid rgb(240, 240, 240);
+    width: max-content;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    border-radius: 0.25rem;
+
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: black;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+BONUS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+html {
+    background-color: rgb(198, 236, 252);
+}
+
+body {
+    margin: 5vw;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgb(126, 216, 252);
+}
+
+
+.port {
+    background: url('./img/me.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    height: 30px;
+    width: 30px;
+}
+
+.footer {
+    border-radius: 0 0 1rem 1rem;
+}
