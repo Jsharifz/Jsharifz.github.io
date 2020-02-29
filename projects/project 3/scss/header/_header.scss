@@ -1,0 +1,123 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+HEADER
+- - - - - - - - - - - - - - - - - - - - - - - - */
+.search {
+  background: $primary-color;
+  justify-content: space-between;
+  padding: 0;
+  height: 100px;
+
+  p {
+    display: inline-block;
+    margin: 2rem 0 0 5vw;
+    font-size: 30px;
+    font-family: $font;
+    position: absolute;
+    top: 0px;
+  }
+
+  input[type="text"] {
+    width: 12rem;
+    height: 3rem;
+    margin: 1.5rem 5vw 1rem 3rem;
+    font-size: 20px;
+    border: solid $heading-color 1px;
+    border-radius: 40px;
+    color: white;
+    background-color: $primary-color;
+    padding-left: 1rem;
+    font-family: $font;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ::placeholder {
+    color: $heading-color;
+  }
+}
+
+.wrapper {
+  height: 60px;
+  background-color: $secondary-color;
+  padding-left: 5vw;
+}
+
+header nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  a {
+    color: $heading-color;
+    margin-right: 4rem;
+    font-size: 1rem;
+    font-family: $font;
+  }
+}
+.menubutton {
+  display: none;
+  cursor: pointer;
+  float: right;
+  top: 0;
+  right: 0;
+  color: gray;
+}
+
+#mainnav-mobile {
+  display: block;
+  height: min-content;
+  position: fixed;
+  right: -300px;
+  top: 100px;
+  list-style: none;
+  background-color: $secondary-color;
+  width: 300px;
+
+  transition: 0.5s;
+  a {
+    color: $heading-color;
+    margin-left: 4rem;
+    font-size: 1rem;
+    font-family: $font;
+    margin: 1rem;
+  }
+  li {
+    padding: 1rem;
+  }
+}
+
+.mainnav-mobile-active {
+  right: 0px !important;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+MEDIA QUERIES
+- - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (max-width: 900px) {
+  .menubutton {
+    display: block;
+    margin: 2.2rem 3rem 0 0;
+  }
+
+  .wrapper {
+    visibility: hidden;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #mainnav-mobile {
+    display: none;
+  }
+}
