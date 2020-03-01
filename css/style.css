@@ -237,7 +237,7 @@ nav:hover {
     z-index: 1;
 
     justify-self: center;
-    animation: grid1 30s infinite ease-in-out;
+    animation: grid1 50s infinite ease-in-out;
 }
 
 .background-grid-2 {
@@ -248,7 +248,7 @@ nav:hover {
     z-index: 0;
 
     justify-self: center;
-    animation: grid2 40s infinite ease-in-out;
+    animation: grid2 52s infinite ease-in-out;
 }
 
 .background-grid-3 {
@@ -260,7 +260,7 @@ nav:hover {
     z-index: 1;
 
     justify-self: center;
-    animation: grid1 30s infinite ease-in-out;
+    animation: grid1 54s infinite ease-in-out;
 }
 
 .background-grid-4 {
@@ -271,7 +271,7 @@ nav:hover {
     z-index: 1;
 
     justify-self: center;
-    animation: grid2 40s infinite ease-in-out;
+    animation: grid2 56s infinite ease-in-out;
 }
 
 .background-grid-5 {
@@ -282,24 +282,24 @@ nav:hover {
     z-index: 0;
 
     justify-self: center;
-    animation: grid1 30s infinite ease-in-out;
+    animation: grid1 58s infinite ease-in-out;
 }
 
 @keyframes grid1 {
     0% {
         width: 90%;
         height: 100%;
-        margin-top: -10rem;
+        margin-top: -5rem;
     }
     50% {
         width: 100%;
         height: 50%;
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
     100% {
         width: 90%;
         height: 100%;
-        margin-top: -10rem;
+        margin-top: -5rem;
     }
 }
 
@@ -307,17 +307,17 @@ nav:hover {
     0% {
         width: 100%;
         height: 50%;
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
     50% {
         width: 90%;
         height: 100%;
-        margin-top: -10rem;
+        margin-top: -5rem;
     }
     100% {
         width: 100%;
         height: 50%;
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
 }
 
