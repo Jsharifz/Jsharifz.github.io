@@ -1,52 +1,35 @@
 /* About START */
-
-#about-head {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    padding-top: 3rem;
-}
-
-#about-head h1 {
-    font-family: "Spartan";
-    font-size: 3rem;
-    user-select: none;
-    text-shadow: -1px 0 red, 0 1px green, 1px 0 blue, 0 -1px yellow;
-}
-
-#about {
-    display: flex;
-
-    justify-content: center;
-
-    width: 100%;
-
-    background-color: rgba(236, 255, 255, 0.9);
-}
-
 .about-wrapper {
-    margin-top: 5rem;
-    width: 75%;
+  margin-top: 5rem;
+  width: 75%;
 }
 
 #javad-photo {
-    float: left;
+  float: left;
 
-    border-radius: 0.5rem;
-    margin: 0 1rem 0 0;
+  border-radius: 0.5rem;
+  margin: 0 1rem 0 0;
 
-    width: 20vw;
-    min-width: 200px;
+  width: 20vw;
+  min-width: 200px;
 }
 
 .about-wrapper p {
-    text-align: justify;
+  display: flex;
 
-    font-size: 1.25rem;
+  text-align: justify;
 
-    margin: 0;
+  font-size: 1.25rem;
+
+  margin: 0;
 }
 
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+
+  .about-wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 /* About END */
