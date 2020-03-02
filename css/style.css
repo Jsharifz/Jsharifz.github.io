@@ -76,54 +76,17 @@ body {
     margin: 1rem;
 
     border-radius: 1rem;
+    box-shadow: inset 0 0 1rem rgb(166, 255, 0);
 
-    transition: 1s;
-
-    animation: rotate 20s infinite linear;
+    transition: 0.5s;
 }
 
 #home-icon:hover {
     scale: 1;
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-        box-shadow: inset 0 0 1rem red;
-    }
-    33% {
-        transform: rotate(120deg);
-        box-shadow: inset 0 0 1rem green;
-    }
-    66% {
-        transform: rotate(240deg);
-        box-shadow: inset 0 0 1rem blue;
-    }
-    100% {
-        transform: rotate(360deg);
-        box-shadow: inset 0 0 1rem red;
-    }
-}
-
-#home-icon p {
-    font-size: 2rem;
-
-    animation: counter-rotate 20s infinite linear;
-}
-
-@keyframes counter-rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    33% {
-        transform: rotate(-120deg);
-    }
-    66% {
-        transform: rotate(-240deg);
-    }
-    100% {
-        transform: rotate(-360deg);
-    }
+#home-icon i {
+    font-size: 3rem;
 }
 
 /* Home Button END */
@@ -167,14 +130,48 @@ nav:hover {
     animation: rotate 20s infinite linear;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: inset 0 0 1rem red;
+    }
+    33% {
+        transform: rotate(120deg);
+        box-shadow: inset 0 0 1rem green;
+    }
+    66% {
+        transform: rotate(240deg);
+        box-shadow: inset 0 0 1rem blue;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: inset 0 0 1rem red;
+    }
+}
+
 #home-icon-nav:hover {
     scale: 1;
 }
 
-#home-icon-nav p {
-    font-size: 2rem;
+#home-icon-nav i {
+    font-size: 3rem;
 
     animation: counter-rotate 20s infinite linear;
+}
+
+@keyframes counter-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(-120deg);
+    }
+    66% {
+        transform: rotate(-240deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 .nav-links a {
