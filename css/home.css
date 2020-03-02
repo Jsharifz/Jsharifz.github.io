@@ -9,7 +9,7 @@
 
     margin-top: 0px;
 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     background-color: rgba(236, 255, 255, 0.9);
@@ -57,7 +57,7 @@
     align-items: center;
 
     height: 20vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .introduction h1 {
@@ -159,6 +159,7 @@
 
 #stack-head {
     display: flex;
+    width: 100%;
 
     justify-content: center;
     align-items: center;
@@ -259,6 +260,7 @@
 
 #projects-head {
     display: flex;
+    width: 100%;
 
     justify-content: center;
     align-items: center;
@@ -277,8 +279,6 @@
 #projects {
     display: flex;
     flex-direction: column;
-
-    padding: 2rem;
 
     height: auto;
     width: 100%;
@@ -309,68 +309,3 @@
 }
 
 /* Projects END */
-
-/* Social START */
-
-#connect {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 15vh;
-    padding-top: 10rem;
-}
-
-#connect h1 {
-    font-family: "Spartan";
-    font-size: 3rem;
-    user-select: none;
-    text-shadow: -1px 0 red, 0 1px green, 1px 0 blue, 0 -1px yellow;
-}
-
-#social {
-    display: flex;
-    flex-direction: row;
-
-    height: 100px;
-    width: 100%;
-
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(236, 255, 255, 0.9);
-}
-
-#social a {
-    margin: 0 10px 0 10px;
-    scale: 0.75;
-    transition: 0.5s;
-}
-
-#social svg {
-    height: 80px;
-}
-
-#social a:hover {
-    scale: 1;
-    animation: bounce 3s infinite linear;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0px);
-    }
-    33% {
-        transform: translateY(5px);
-    }
-
-    66% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-/* Social END */
