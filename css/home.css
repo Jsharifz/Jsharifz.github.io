@@ -17,10 +17,6 @@
     z-index: 1;
 }
 
-#hero * {
-    transition: 3s;
-}
-
 .hero-wrapper {
     font-family: "Ubuntu";
 
@@ -36,22 +32,18 @@
 
     text-align: center;
 
-    animation: tilt 5s infinite linear;
+    animation: growShrink 20s infinite ease-in-out;
 }
 
-@keyframes tilt {
+@keyframes growShrink {
     0% {
-        transform: rotatex(0deg);
+        scale: 100%;
     }
-    33% {
-        transform: rotatex(10deg);
-    }
-
-    66% {
-        transform: rotatex(-10deg);
+    50% {
+        scale: 105%;
     }
     100% {
-        transform: rotatex(0deg);
+        scale: 100%;
     }
 }
 
@@ -73,7 +65,7 @@
 
     font-weight: lighter;
 
-    letter-spacing: 1.5vw;
+    letter-spacing: 1.25vw;
 
     user-select: none;
 
@@ -183,11 +175,12 @@
 }
 
 .stack {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
-    height: 100px;
-    width: 100vw;
+    height: auto;
+    width: 100%;
+    padding: 1rem 0;
 
     justify-content: center;
     align-items: center;
@@ -196,33 +189,19 @@
 }
 
 .stack div {
-    margin: 0 3rem 0 3rem;
-
     transition: 0.5s;
+    margin: 1rem 0;
 }
 
 .stack svg {
     height: 80px;
 }
 
-#javascript {
-    position: relative;
-    top: 0;
-
-    margin-top: -60px;
-    margin-left: 15px;
-    margin-right: 0px;
-    padding: 0;
-
-    height: 50px;
-    background-color: black;
-    border: solid 1px black;
-    width: 50px;
-
-    z-index: -1;
-}
-
 .icon-alt-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     animation: sprite1 25s infinite linear;
 
     height: 80px;
@@ -248,7 +227,8 @@
 
 .icon-alt-2 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     height: 80px;
 
@@ -298,10 +278,10 @@
     display: flex;
     flex-direction: column;
 
-    padding-bottom: 2rem;
+    padding: 2rem;
 
     height: auto;
-    width: 100vw;
+    width: 100%;
 
     justify-content: center;
     align-items: center;
@@ -313,10 +293,19 @@
     font-size: 1.25rem;
     text-align: center;
 
-    width: 90vw;
+    margin: 0;
 
-    margin-top: 2rem;
-    margin-bottom: 0;
+    width: 90vw;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 0.5rem;
 }
 
 /* Projects END */
@@ -345,7 +334,7 @@
     flex-direction: row;
 
     height: 100px;
-    width: 100vw;
+    width: 100%;
 
     justify-content: center;
     align-items: center;
