@@ -1,47 +1,48 @@
 /* About START */
 .about {
-    height: max-content;
+  height: auto;
+  min-height: 300px;
 
-    width: 100%;
+  width: 100%;
 
-    padding: 1rem 0;
+  padding: 1rem 0;
 
-    background-color: rgba(236, 255, 255, 0.9);
+  background-color: rgba(236, 255, 255, 0.9);
 }
 
 .about p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .about .social {
-    background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #javad-photo {
-    float: left;
+  float: left;
 
-    border-radius: 0.5rem;
-    margin: 0 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0 1rem 1rem 1rem;
 
-    width: 20vw;
-    min-width: 200px;
+  height: 25vw;
+  min-height: 300px;
 }
 
 @media screen and (max-width: 479px) {
-    /* start of phone styles */
+  /* start of phone styles */
 
-    .about {
-        display: flex;
-        flex-direction: column;
+  .about {
+    display: flex;
+    flex-direction: column;
 
-        justify-content: center;
-        align-items: center;
-    }
+    justify-content: center;
+    align-items: center;
+  }
 
-    .about p {
-        text-align: justify;
-    }
+  .about p {
+    text-align: justify;
+  }
 }
 /* About END */
