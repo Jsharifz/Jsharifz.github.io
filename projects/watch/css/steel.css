@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
+/* font-family: 'Darker Grotesque', sans-serif; */
+
+@font-face{
+  font-family:'digital-clock-font';
+  src: url('../font/digital-7.ttf');
+ }
+
+ :root {
+  --font:'digital-clock-font';
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.watch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+border-radius: 1.6rem;
+
+width: 250px;
+height: 300px;
+
+background-image: linear-gradient(to right, rgb(223, 223, 223), rgb(160, 160, 160), rgb(168, 154, 72), rgb(168, 154, 72), rgb(168, 154, 72), rgb(168, 154, 72), rgb(160, 160, 160),rgb(223, 223, 223)) ;
+
+}
+
+.ribs {
+  background-image: linear-gradient(to right, rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223), rgb(94, 94, 94) ,rgb(223, 223, 223));
+  height: 175px;
+  width: 90%;
+  margin-top: -15px;
+}
+
+.top-strap {
+  position: absolute;
+
+  width: 150px;
+  height: 100px;
+
+  background-color: white;
+
+  margin-bottom: 385px;
+  border-radius: 0.15rem;
+
+  z-index: 3;
+}
+
+.dial {
+  position: absolute;
+
+  width: 50px;
+  height: 21px;
+
+  background-image: linear-gradient(rgb(224, 224, 224),rgb(230, 230, 230), rgb(53, 53, 53), rgb(231, 231, 231),rgb(172, 172, 172), rgb(104, 104, 104));
+  border: 2px solid rgb(185, 185, 185);
+
+  margin-left: 215px;
+
+  border-radius: 0 0.25rem 0.25rem 0;
+
+  z-index: -1;
+}
+
+.top-gold {
+  position: absolute;
+
+  width: 227px;
+  height: 21px;
+
+  background-image: linear-gradient(rgb(224, 224, 224), rgb(194, 194, 194));
+
+  margin-bottom: 279px;
+
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  z-index: 1;
+}
+
+.topleft {
+  position: absolute;
+  background-color: rgb(175, 175, 175);
+  height: 19px;
+  width: 12px;
+
+  margin-bottom: 277px;
+  margin-right: 230px;
+  transform: skew(-21deg, -10deg);
+
+  border-bottom: 2px solid rgb(165, 165, 165);
+
+  z-index: 2;
+}
+
+.topright {
+  position: absolute;
+  background-color: rgb(175, 175, 175);
+  height: 20px;
+  width: 12px;
+
+  margin-bottom: 277px;
+  margin-left: 230px;
+  transform: skew(21deg, 10deg);
+
+  z-index: 2;
+}
+
+.displeft {
+  position: absolute;
+  background-color: rgb(3, 0, 39);
+  height: 66px;
+  width: 12.5px;
+
+  transform: skewY(20deg);
+  margin-top: 160px;
+  margin-right: 235.5px;
+}
+
+.dispright {
+  position: absolute;
+  background-color: rgb(3, 0, 39);
+  height: 66px;
+  width: 12.5px;
+
+  transform: skewY(-20deg);
+  margin-top: 160px;
+  margin-left: 235.5px;
+}
+
+.dispbot {
+  position: absolute;
+
+  width: 222px;
+  height: 100px;
+
+  background-image: linear-gradient(rgb(223, 223, 223), rgb(202, 202, 202));
+
+  margin-top: 332px;
+
+  z-index: 1;
+}
+
+.botleft {
+  position: absolute;
+  background-color: rgb(158, 158, 158);
+  height: 50px;
+  width: 12px;
+
+  margin-top: 275px;
+  margin-right: 235.5px;
+  transform: skewY(20deg);
+
+  border-right: 2px solid rgb(82, 82, 82);
+}
+
+.botright {
+  position: absolute;
+  background-color: rgb(158, 158, 158);
+  height: 50px;
+  width: 12px;
+
+  margin-top: 275px;
+  margin-left: 235.5px;
+  transform: skewY(-20deg);
+
+  border-left: 2px solid rgb(82, 82, 82);
+}
+
+.bot-trim {
+  position: absolute;
+
+  width: 249px;
+  height: 100px;
+
+  background-color: white;
+
+  border-top: 2px solid rgb(122, 122, 122);
+
+  margin-top: 402px;
+
+  z-index: 2;
+}
+
+.bot-strap {
+  position: absolute;
+
+  width: 150px;
+  height: 100px;
+
+  background-color: white;
+
+  border-top: 2px solid rgb(104, 104, 104);
+
+  margin-top: 360px;
+  border-radius: 0.25rem;
+
+  z-index: 3;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  
+  width: 90%;
+  height: 22%;
+  background-image: linear-gradient(rgb(4, 0, 63), rgb(3, 0, 39));
+  border-top: 5px solid rgb(201, 201, 201);
+}
+
+#col {
+  font-family: var(--font);
+
+  color: rgb(0, 217, 255);
+  text-shadow: 0 0 5px blue;
+
+  width: min-content;
+  font-size: 3.5rem;
+}
+
+#m {
+  font-family: var(--font);
+
+  color: rgb(0, 217, 255);
+  text-shadow: 0 0 5px blue;;
+
+  width: min-content;
+  font-size: 3.5rem;
+  font-size: 3.5rem;
+}
+
+#t {
+  font-size: 0.5rem;
+  color: rgb(0, 217, 255);
+  text-shadow: 0 0 5px blue;;
+  width: min-content;
+
+  padding-top: 1.15rem;
+  padding-left: 0.1rem;
+  font-family: sans-serif;
+  margin-right: 1rem;
+}
+
+#h {
+  display: flex;
+  justify-content: right;
+  font-family: var(--font);
+
+  color: rgb(0, 217, 255);
+  text-shadow: 0 0 5px blue;;
+
+  width: 1rem;
+  font-size: 3.5rem;
+  width: 3.5rem;
+}
+
+#ma {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+#morn {
+  display: flex;
+  padding-bottom: 0.5rem;
+  font-family: sans-serif;
+
+  color: rgb(0, 217, 255);
+  text-shadow: 0 0 5px blue;;
+  width: min-content;
+  height: min-content;
+  font-size: 0.75rem;
+}
+
+#aft {
+  display: flex;
+  padding-top: 0.5rem;
+  font-family: sans-serif;
+
+  color: rgb(0, 217, 255);
+  text-shadow: 0 0 5px blue;;
+  width: min-content;
+  height: min-content;
+  font-size: 0.75rem;
+}
+
+.bul {
+  position: absolute;
+  bottom: 215px;
+margin-left: 125px;
+}
+
+.bul p {
+  margin: 0;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 0.75rem;
+  color: silver;
+}
+
+.click {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+
+  z-index: 3;
+}

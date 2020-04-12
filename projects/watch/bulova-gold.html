@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+
+    Watch: https://www.reeds.com/men-s-bulova-archive-series-digital-led-computron-gold-tone-stainless-steel-watch-97c110-plu19992874.html?CAWELAID=120073160000170475&CATARGETID=120073160000152495&CADevice=c&gclid=CjwKCAjw1cX0BRBmEiwAy9tKHpmgcsT28OO6Jv-RQdyQClGWLapohG0mQM9DEvHPOrsyxVaXHfugkhoCZk8QAvD_BwE 
+    Font: https://www.1001fonts.com/digital+clock-fonts.html and Google Fonts
+    
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheet START -->
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/gold.css" media="screen" />
+    <!-- Stylesheet END -->
+
+    <title>Gold LED</title>
+</head>
+
+<body>
+    <a class="click" href="bulova-steel.html"></a>
+    <div class="watch">
+
+        <div class="dial"></div>
+
+        <div class="top-strap"></div>
+        <div class="top-gold"></div>
+
+        <div class="topleft"></div>
+        <div class="topright"></div>
+
+        <div class="bot-trim"></div>
+        <div class="bot-strap"></div>
+
+        <div class="displeft"></div>
+        <div class="dispright"></div>
+        <div class="dispbot"></div>
+
+        <div class="botleft"></div>
+        <div class="botright"></div>
+
+        <div class="ribs"></div>
+        <div class="inner">
+            <div id="ma">
+                <div id="morn"></div>
+                <div id="aft"></div>
+            </div>
+            <div id="h"></div>
+            <div id="col"></div>
+            <div id="m"></div>
+            <div id="t">T2</div>
+            <div class="bul">
+                <p>BULOVA</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+<script>
+
+    onload = function () {
+
+        let col = document.getElementById('col');
+        setInterval(function () {
+            let second = Number(moment().format('S'))
+
+            let display = 100
+
+            if (second % 2 == 0) {
+                display = 100;
+            } else {
+                display = 0;
+            };
+
+            col.innerHTML = `<div style="opacity: ${display};">:</div>`;
+        }, 500);
+
+        let min = document.getElementById('m');
+        setInterval(function () {
+            let minute = Number(moment().format('mm'))
+
+            if (minute < 10) {
+                min.innerHTML = `0${minute}`;
+            } else {
+                min.innerHTML = `${minute}`;
+            }
+
+        }, 1000);
+
+        let hr = document.getElementById('h');
+        setInterval(function () {
+
+            let hour = Number(moment().format('hh'))
+
+            if (hour < 10) {
+                hr.innerHTML = `0${hour}`;
+            } else {
+                hr.innerHTML = `${hour}`;
+            }
+
+        }, 1000);
+
+        let morning = document.getElementById('morn');
+        setInterval(function () {
+            let ampm = moment().format('a')
+            let am = 'A'
+            if (ampm === 'am') {
+                am = 'A'
+            } else {
+                am = ''
+            }
+            morning.innerHTML = `${am}`;
+        }, 1000);
+
+        let after = document.getElementById('aft');
+        setInterval(function () {
+            let ampm = moment().format('a')
+            let pm = 'P'
+            if (ampm === 'pm') {
+                pm = 'P'
+            } else {
+                pm = ''
+            }
+            after.innerHTML = `${pm}`;
+        }, 1000);
+    }
+
+</script>
+
+</html>
