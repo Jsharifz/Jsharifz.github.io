@@ -295,8 +295,8 @@ background-image: linear-gradient(to right, rgb(255, 241, 204), rgb(206, 174, 10
 
 .bul {
   position: absolute;
-  bottom: 215px;
-margin-left: 125px;
+  margin-top: 50px;
+  margin-left: 125px;
 }
 
 .bul p {
