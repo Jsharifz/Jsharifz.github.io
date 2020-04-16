@@ -305,11 +305,3 @@ margin-left: 125px;
   font-size: 0.75rem;
   color: silver;
 }
-
-.click {
-  position: absolute;
-  width: 250px;
-  height: 350px;
-
-  z-index: 3;
-}
