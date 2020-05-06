@@ -52,7 +52,7 @@ let piEstimator = () => {
     iterations++;
 
     // Converts interval time (ms) to intervals per second.
-    iterationRate = Math.floor(1000 / iterationTimeLength);
+    iterationRate = (1000 / iterationTimeLength).toFixed(2);
 
     // These variables reasign themselves to a value between (inclusive) 0 and 1.
     run = Math.random() * (1 - 0) + 0;
@@ -95,7 +95,7 @@ let piEstimator = () => {
     </div>
     <div>
         <p>Rate:</p>
-        <p>${iterationRate} Iterations/Second</p>
+        <p>${iterationRate} Cycles/Second</p>
     </div>
     <div>
         <p># of Success:</p>
@@ -204,7 +204,7 @@ const reset = () => {
 
 // If the running state is true, this function clears the interval changes the interval rate, then restarts the calculator.
 const faster = () => {
-    if (running === true) {
+    if (running === true && iterationTimeLength > 3.75) {
         clearInterval(x);
         iterationTimeLength = iterationTimeLength / 1.25;
         startStopper();
